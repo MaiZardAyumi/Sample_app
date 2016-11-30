@@ -1,5 +1,5 @@
 require 'test_helper' 
-
+ 
 class SiteLayoutTest < ActionDispatch::IntegrationTest
   
   test "layout links" do
@@ -15,3 +15,4 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   end
   
 end
+ 
