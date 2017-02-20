@@ -97,7 +97,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name => '491369052@qq.com',
     :password => 'lq5188315085',
-    :domain => 'heroku.com',
+    :domain => 'qq.com',
     :enable_starttls_auto => true
   }
   
