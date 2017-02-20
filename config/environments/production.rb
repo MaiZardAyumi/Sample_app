@@ -86,4 +86,22 @@ Rails.application.configure do
   
   # Default Mailer Host
   Rails.application.routes.default_url_options[:host] = 'domain.com'
+  
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = 'lqsampleapp.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.exmail.qq.com', 
+    :port => '587',
+    :authentication => :plain,
+    :user_name => '491369052@qq.com',
+    :password => 'lq5188315085',
+    :domain => 'heroku.com',
+    :enable_starttls_auto => true
+  }
+  
+  
+  
+  
 end

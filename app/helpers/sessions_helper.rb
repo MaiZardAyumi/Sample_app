@@ -31,7 +31,6 @@ module SessionsHelper
   end
   
   #如果用户已登录，返回true，否则换回false
-  
   def logged_in?
     !current_user.nil?
   end
