@@ -85,7 +85,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   # Default Mailer Host
-  Rails.application.routes.default_url_options[:host] = 'domain.com'
+  Rails.application.routes.default_url_options[:host] = 'lqsampleapp.herokuapp.com'
   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
