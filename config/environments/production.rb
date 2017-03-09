@@ -92,12 +92,12 @@ Rails.application.configure do
   host = 'lqsampleapp.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.exmail.qq.com', 
-    :port => '587',
+    :address => 'smtp.163.com', 
+    :port => '25',
     :authentication => :plain,
-    :user_name => '491369052@qq.com',
+    :user_name => '13037106762@163.com',
     :password => 'lq5188315085',
-    :domain => 'qq.com',
+    :domain => 'lq.com',
     :enable_starttls_auto => true
   }
   
