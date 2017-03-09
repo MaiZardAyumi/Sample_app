@@ -85,20 +85,16 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   # Default Mailer Host
-  Rails.application.routes.default_url_options[:host] = 'lqsampleapp.herokuapp.com'
-  
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: 'https://lqsampleapp.herokuapp.com/' }
   config.action_mailer.delivery_method = :smtp
-  host = 'lqsampleapp.herokuapp.com'
-  config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.smtp_settings = {
-    :address => 'smtp.163.com', 
-    :port => '25',
-    :authentication => :plain,
-    :user_name => '13037106762@163.com',
-    :password => 'lq5188315085',
-    :domain => 'lq.com',
-    :enable_starttls_auto => true
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.163.com',
+    port: 25,
+    domain: 'lqsampleapp.herokuapp.com/',
+    user_name: '13037106762@163.com',
+    password: 'lq5188315085',
+    authentication: :plain,
+    enable_starttls_auto: true
   }
   
   
